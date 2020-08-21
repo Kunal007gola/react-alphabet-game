@@ -11,7 +11,7 @@ class Game extends React.Component{
       alphabets: alphabets,
       isSound: true,
       isRandom: false,
-      currentPosition: 10,
+      currentPosition: 0,
       currentTick: 0
     };
 
