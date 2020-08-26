@@ -45,8 +45,6 @@ class Game extends React.Component{
     let letterSound = document.querySelector(`audio[data-key="letter"]`);
     let wordSound = document.querySelector(`audio[data-key="word"]`);
 
-    if (!this.state.isSound) return;
-
     if(this.state.currentTick === 0) {
         letterSound.currentTime = 0;
         letterSound.play();
@@ -147,7 +145,7 @@ class Game extends React.Component{
     return(
       <div className="game">
         <div className="game-content">
-          <div>
+          <div className="slider-buttons">
             <SlideButton text="Random Letters"
                           onChange={this.randomSwitch}
                           isChecked={this.state.isRandom} />
